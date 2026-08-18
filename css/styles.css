@@ -159,28 +159,31 @@ h2, h3 {
   color: var(--royal-blue);
 }
 
-/* Inherit standard section layout and margins */
+/* Container alignment matching the rest of the main section */
 .volunteer-section {
-  margin-top: 2rem; /* Matches spacing between other sections without adding extra side indentation */
-  padding: 0;        /* Removes double padding */
+  max-width: 800px; /* Adjust if your main section uses a different max-width */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* Ensure headings inherit default typography without extra offsets */
+/* Ensure section titles match font and alignment */
 .volunteer-section h3 {
+  margin-top: 0;
   margin-bottom: 0.75rem;
 }
 
-/* Volunteer Cards Container */
+/* Flex container for the cards */
 .volunteer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
-/* Individual Volunteer Cards */
+/* Card layout */
 .volunteer-card {
-  flex: 1 1 280px;
+  flex: 1 1 300px; /* Expands nicely and wraps on small screens */
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 1.25rem;
@@ -197,15 +200,16 @@ h2, h3 {
   margin-bottom: 1rem;
 }
 
-/* Button Styling */
+/* Button styling */
 .signup-button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: #003366;
+  background-color: #003366; /* Wildcat Blue */
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 .signup-button:hover {
