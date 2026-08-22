@@ -196,6 +196,31 @@ h2, h3 {
   background-color: #002244;
 }
 
+/* Booster Dues Card Styling */
+.dues-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.dues-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.dues-amount {
+  font-size: 1.25rem;
+  color: #003366; /* Wildcat Blue */
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+
 /* ======================================================
    Footer
    ====================================================== */
