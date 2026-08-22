@@ -10,18 +10,60 @@ body {
   background-color: #ffffff;
 }
 
-header, footer {
+/* ==========================================================================
+   Header & Navigation (Restored Rules)
+   ========================================================================== */
+header {
   background-color: #003366; /* Eagan Wildcat Blue */
   color: #ffffff;
   padding: 1rem 0;
 }
 
-header a, footer a {
+header > div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Navigation List Styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
+/* Header Navigation Links & Buttons */
+nav a {
   color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #002244;
+  text-decoration: underline;
 }
 
 /* ==========================================================================
-   Layout & Container Alignment
+   Main Content Container
    ========================================================================== */
 main {
   max-width: 800px;
@@ -91,7 +133,7 @@ h3 {
 }
 
 /* ==========================================================================
-   Buttons
+   Content Action Buttons (SignUpGenius & Dues)
    ========================================================================== */
 .signup-button {
   display: inline-block;
@@ -108,10 +150,32 @@ h3 {
 
 .signup-button:hover {
   background-color: #002244;
+  text-decoration: none;
 }
 
-/* Optional mobile optimization */
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* Mobile Responsive Adjustments */
 @media (max-width: 600px) {
+  header > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
   .signup-button {
     display: block;
     width: 100%;
